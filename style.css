@@ -122,3 +122,42 @@ dialog[open]{height:fit-content}.image-stage{display:block;flex:none;text-align:
 .exploration-board .image-button{background:#f8f6f3;border:0;border-radius:0;padding:20px;}
 .exploration-board figcaption{padding:0 20px 16px;margin:0;color:#6c5e55;}
 @media(max-width:700px){.exploration-board .artifact-stage{padding:16px}.exploration-board .image-button{padding:10px}.exploration-board figcaption{padding:0 14px 14px}}
+
+/* A single, quiet KPI treatment: number + plain-language meaning. */
+.outcome.metric-card.simple-kpi{display:grid;grid-template-columns:minmax(250px,.9fr) minmax(0,1.2fr);gap:34px;align-items:center;background:#f8f6f3;color:#4f3336;border:1px solid #d9cdc7;border-left:4px solid #745653;border-radius:12px;box-shadow:none;padding:30px 34px;margin:18px 0 38px;overflow:visible;}
+.simple-kpi .kpi-label{margin:0 0 18px;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#654c4f;line-height:1.5;}
+.simple-number>strong,.step-metric strong{font-family:Instrument,Georgia,serif;font-size:clamp(64px,7vw,88px);font-weight:400;line-height:1;letter-spacing:-.03em;white-space:nowrap;display:block;}
+.simple-number>strong>span{font-size:.65em;color:#806b68;}
+.simple-number>b,.step-metric b{display:block;font-size:16px;line-height:1.4;margin-top:8px;font-weight:500;}
+.step-metric{display:flex;gap:21px;align-items:center;}
+.step-metric>i{font-style:normal;font-size:29px;color:#8c7670;}
+.simple-kpi .kpi-copy h2{font-family:DM,Arial,sans-serif;font-size:23px;line-height:1.35;font-weight:600;letter-spacing:-.02em;margin:0;}
+.simple-kpi .kpi-copy p{font-size:16px;color:#654c4f;line-height:1.6;margin-top:12px;}
+.simple-kpi .kpi-copy small{display:block;font-size:14px;line-height:1.55;color:#6d5c58;margin-top:16px;}
+.kpi-context{font-size:14px;color:#654c4f;margin:-20px 0 36px;}
+.workflow-panel.before{background:#fbf4f2;border-color:#d9bbb4;border-top:3px solid #b65d52;}
+.workflow-panel.before .workflow-count{color:#994b43;}
+.workflow-panel.after{background:#f2f7ef;color:#355d3d;border-color:#b8c9ae;border-top:3px solid #5b8059;}
+.workflow-phase{display:flex;align-items:center;gap:8px;margin-bottom:12px;font-size:14px;font-weight:600;}
+.workflow-panel.after .workflow-route,.workflow-panel.after .workflow-takeaway{border-color:#bfd0b7;}
+.workflow-panel.after .workflow-node{background:#fff;border-color:#c4d1bc;color:#355d3d;}
+.workflow-panel.after .workflow-takeaway{color:#355d3d;}
+.workflow-panel.before .workflow-node{border-color:#e0c9c3;}
+@media(max-width:700px){.outcome.metric-card.simple-kpi{grid-template-columns:1fr;gap:24px;padding:25px 23px;margin-bottom:32px}.simple-kpi .kpi-number{padding-bottom:23px;border-bottom:1px solid #ded3cc}.simple-kpi .kpi-label{margin-bottom:14px}.simple-kpi .kpi-copy h2{font-size:21px}.step-metric{gap:25px}.step-metric strong,.simple-number>strong{font-size:80px}.simple-kpi .kpi-copy p{font-size:16px}.simple-kpi .kpi-copy small{font-size:14px}}
+/* Warm two-tone opening KPIs, using the portfolio's brown palette. */
+.outcome.metric-card.simple-kpi{gap:0;padding:0;background:#f6eee6;border:1px solid #c9b2a3;border-left:1px solid #c9b2a3;border-radius:14px;overflow:hidden;box-shadow:0 4px 0 #e9dcd1;align-items:stretch;}
+.simple-kpi .kpi-number{background:#4f3336;color:#fff8f0;padding:29px 33px 32px;display:flex;flex-direction:column;justify-content:center;}
+.simple-kpi .kpi-label{color:#ead6c5;display:flex;align-items:center;gap:16px;margin-bottom:20px;}
+.simple-kpi .kpi-label:after{content:"";height:1px;background:#ae8a7c;flex:1;max-width:50px;}
+.simple-kpi .simple-number>strong,.simple-kpi .step-metric strong{color:#fff8f0;}
+.simple-kpi .simple-number>strong>span{color:#ddc3af;}
+.simple-kpi .simple-number>b,.simple-kpi .step-metric b{color:#ead6c5;}
+.simple-kpi .step-metric>i{color:#ddc3af;}
+.simple-kpi .kpi-copy{padding:33px 36px;align-self:center;}
+.simple-kpi .kpi-copy h2{color:#4f3336;}
+.simple-kpi .kpi-copy small{color:#705650;}
+@media(max-width:700px){.outcome.metric-card.simple-kpi{gap:0;padding:0;}.simple-kpi .kpi-number{padding:24px 25px 27px;border:0;}.simple-kpi .kpi-label{margin-bottom:18px;}.simple-kpi .kpi-copy{padding:25px;}.simple-kpi .kpi-copy small{margin-top:14px;}}
+
+.simple-kpi .kpi-diamond{width:19px;height:19px;flex:0 0 19px;fill:#ead6c5;}
+.simple-kpi .kpi-label{gap:10px;}
+.simple-kpi .kpi-label:after{margin-left:6px;}

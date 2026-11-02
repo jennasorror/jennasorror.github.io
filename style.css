@@ -250,3 +250,35 @@ html[data-reading-theme="light"] .kpi-diamond,html[data-reading-theme="dark"] .k
 .simple-kpi .kpi-copy h2:before{content:none;display:none;}
 
 html[data-reading-theme="dark"] header .brand img{filter:brightness(0) invert(1);}
+
+/* Opening project metrics: one number, one explanation, one quiet surface. */
+.opening-kpi{display:grid;grid-template-columns:minmax(230px,.85fr) minmax(0,1.25fr);align-items:center;gap:36px;padding:32px 38px;margin:18px 0 38px;border:1px solid #d2bdaa;border-radius:12px;background:#f2e9df;color:#4f3336;}
+.opening-kpi .opening-kpi-value{font-family:Instrument,Georgia,serif;font-size:clamp(68px,7.5vw,92px);font-weight:400;letter-spacing:-.035em;line-height:1.05;margin:0;white-space:nowrap;color:#4f3336;}
+.opening-kpi-denominator{font-size:.67em;letter-spacing:-.02em;}
+.opening-kpi-arrow{font-family:DM,Arial,sans-serif;font-size:.42em;vertical-align:.2em;margin:0 .15em;}
+.opening-kpi .opening-kpi-meaning{display:flex;align-items:flex-start;gap:12px;font-family:DM,Arial,sans-serif;font-size:18px;font-weight:400;line-height:1.6;margin:0;max-width:42ch;color:#4f3336;}
+.opening-kpi .kpi-diamond{width:15px;height:15px;flex:0 0 15px;fill:currentColor;stroke:none;margin-top:7px;}
+@media(max-width:700px){.opening-kpi{grid-template-columns:1fr;gap:18px;padding:26px 24px;margin-bottom:32px;}.opening-kpi .opening-kpi-value{font-size:72px;}.opening-kpi .opening-kpi-meaning{font-size:17px;max-width:42ch;}.opening-kpi .kpi-diamond{margin-top:6px;}}
+
+/* A restrained two-panel metric with a clear unit beneath each number. */
+.opening-kpi{gap:0;padding:0;background:#faf7f4;border-color:#d8cbc3;overflow:hidden;align-items:stretch;}
+.opening-kpi-measure{padding:30px 34px;background:#4f3336;color:#fff8f0;display:flex;flex-direction:column;justify-content:center;}
+.opening-kpi .opening-kpi-value{color:#fff8f0;}
+.opening-kpi .opening-kpi-unit{font-family:DM,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.5;letter-spacing:0;color:#ead6c5;margin:8px 0 0;}
+.opening-kpi-steps{display:flex;align-items:center;gap:22px;}
+.opening-kpi-steps .opening-kpi-arrow{font-size:27px;color:#ead6c5;margin:0;vertical-align:baseline;}
+.opening-kpi .opening-kpi-meaning{padding:30px 34px;align-self:stretch;align-items:center;max-width:none;border-left:1px solid #d8cbc3;background:#faf7f4;}
+.opening-kpi .kpi-diamond{align-self:center;margin-top:0;}
+@media(max-width:700px){.opening-kpi{gap:0;padding:0;}.opening-kpi-measure{padding:25px 26px;}.opening-kpi .opening-kpi-meaning{padding:24px 26px;border-left:0;border-top:1px solid #d8cbc3;}.opening-kpi-steps{gap:24px;}}
+
+/* Paired opening metrics share a consistent grid and equal panel heights. */
+.opening-kpi-group{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin:18px 0 38px;align-items:stretch;}
+.opening-kpi-group .opening-kpi{grid-template-columns:1fr;grid-template-rows:auto 1fr;margin:0;}
+.opening-kpi-group .opening-kpi-measure{padding:28px 30px;min-height:170px;}
+.opening-kpi-group .opening-kpi-meaning{padding:25px 30px;border-left:0;border-top:1px solid #d8cbc3;align-items:flex-start;font-size:17px;}
+.opening-kpi-group .kpi-diamond{margin-top:6px;align-self:flex-start;}
+.opening-kpi-group .opening-kpi-value{font-size:80px;}
+@media(max-width:700px){.opening-kpi-group{grid-template-columns:1fr;gap:20px;margin-bottom:32px;}.opening-kpi-group .opening-kpi-measure{padding:24px 26px;min-height:0;}.opening-kpi-group .opening-kpi-value{font-size:72px;}.opening-kpi-group .opening-kpi-meaning{padding:22px 26px;}}
+
+/* Existing portfolio accent, without changing the headline layout. */
+.headline-role-accent{color:#4f3336;}

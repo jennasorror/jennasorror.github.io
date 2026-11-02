@@ -51,3 +51,6 @@ document.querySelectorAll('.screen-gallery').forEach(gallery=>{
  let ticking=false;track.addEventListener('scroll',()=>{if(!ticking){requestAnimationFrame(()=>{const left=track.scrollLeft;let nearest=0;slides.forEach((slide,i)=>{if(Math.abs(slide.offsetLeft-slides[0].offsetLeft-left)<Math.abs(slides[nearest].offsetLeft-slides[0].offsetLeft-left))nearest=i;});selected(nearest);ticking=false;});ticking=true;}},{passive:true});
  track.addEventListener('keydown',event=>{if(event.target===track&&(event.key==='ArrowRight'||event.key==='ArrowLeft')){event.preventDefault();go(current+(event.key==='ArrowRight'?1:-1));}});
 });
+
+const readingTheme=document.querySelector('select[data-reading-theme]');
+if(readingTheme){let saved='portfolio';try{saved=localStorage.getItem('portfolio-reading-theme')||saved;}catch{}if(!['portfolio','light','dark'].includes(saved))saved='portfolio';readingTheme.value=saved;document.documentElement.dataset.readingTheme=saved;readingTheme.addEventListener('change',()=>{document.documentElement.dataset.readingTheme=readingTheme.value;try{localStorage.setItem('portfolio-reading-theme',readingTheme.value);}catch{}});}

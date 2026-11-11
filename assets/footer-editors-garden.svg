@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" fill="none">
+<!-- An original editorial garden: punctuation as seeds, paper as leaves. -->
+<path d="M0 266c112-36 180-24 280-11s183 12 290-6 186-5 274 10 232 4 356-18v59H0Z" fill="#f4effc"/>
+<g stroke="#54229b" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+<path d="M-15 276c83-35 134-20 190-35s98-8 152 9 103 19 143 2 104-18 150-4 99 12 152-1 107-8 162 3 156 10 281-1" stroke="#b69cdd" stroke-width="1.1"/>
+<!-- A tall, loose stem capped by two quotation-mark seeds. -->
+<path d="M109 263c30-51 53-110 42-179M137 183c-23-10-40-33-45-54 29 1 43 22 45 54Z"/>
+<path d="M142 164c24-6 40-24 44-43-28 2-43 18-44 43Z" fill="#e6daf7"/>
+<path d="M151 101c-2-10-5-19-10-26"/>
+<path d="M133 39c-13-1-22 8-21 20 1 10 10 16 20 12-2 10-7 16-15 23 18-5 31-20 31-36 0-12-5-19-15-19Z" fill="#54229b" stroke="none"/>
+<path d="M169 32c-12-1-21 8-20 20 1 10 10 16 19 12-2 10-7 16-15 23 18-5 31-20 31-36 0-12-5-19-15-19Z" fill="#8153e5" stroke="none"/>
+<path d="M121 54c2-5 6-7 11-7m27 0c1-4 4-7 9-7" stroke="#fff" stroke-width="1.2"/>
+<!-- Folded paper leaves. -->
+<path d="M267 259c-11-45-25-82-17-126M254 179c-21-14-44-18-64-13 15 26 37 30 64 13Z" fill="#e6daf7"/>
+<path d="M253 166c26-11 39-32 40-52-27 5-42 24-40 52Z" fill="#8153e5" stroke="#8153e5"/>
+<path d="m265 150 16-24" stroke="#fff" stroke-width="1.1"/>
+<path d="M251 134c-19-19-26-38-22-57 23 10 32 30 22 57Z"/>
+<!-- A low curling sprig carries a bracket rather than a flower. -->
+<path d="M349 263c22-29 36-54 40-82 3-21-6-39-18-34-13 5-8 26 9 22"/>
+<path d="M398 113c-14 0-18 6-18 17v5c0 7-4 11-10 12 6 1 10 5 10 12v6c0 11 4 17 18 17" stroke-width="2.5"/>
+<path d="M346 241c-20-2-36-14-45-31 24-5 40 9 45 31Z" fill="#54229b"/>
+<path d="m313 218 24 17" stroke="#fff" stroke-width="1"/>
+<!-- Small middle accents keep an open, airy composition. -->
+<path d="M458 262c-1-22 4-41 17-56m-15 32c-13-1-24-8-28-19 18-1 26 5 28 19Z"/>
+<path d="M470 211c-6-13-5-25 3-35 10 13 9 26-3 35Z" fill="#b69cdd" stroke="none"/>
+<path d="M574 259c18-20 22-40 17-59m1 27c14-4 24-13 28-27-18 0-27 9-28 27Z"/>
+<path d="M589 206c-12-6-17-15-15-27 15 6 20 15 15 27Z" fill="#e6daf7"/>
+<!-- A generous paper petal: a quiet focal point right of center. -->
+<path d="M775 262c3-40 7-78 26-120"/>
+<path d="M802 144c-30-8-52-32-59-65 33-1 63 17 70 45 1-34 18-58 48-67 4 35-12 67-42 82 27-9 50-4 67 15-26 19-56 18-84-10Z" fill="#54229b" stroke="#54229b"/>
+<path d="M801 140c-12-22-27-39-44-49m47 50c29-26 40-49 44-69m-38 73c26-2 46 1 62 10" stroke="#fff" stroke-width="1.1"/>
+<path d="M786 224c-24-1-46-14-54-35 30-2 47 10 54 35Z" fill="#e6daf7"/>
+<path d="M790 210c25-7 39-23 43-45-25 6-40 22-43 45Z"/>
+<!-- A second, lighter punctuation seed at the far right. -->
+<path d="M1006 259c-14-38-28-75-25-119 1-24 9-45 18-61"/>
+<path d="M976 164c-31-5-50-23-57-47 30 1 51 17 57 47Z" fill="#8153e5" stroke="#8153e5"/>
+<path d="m935 127 30 28" stroke="#fff" stroke-width="1.1"/>
+<path d="M984 146c30-7 47-25 53-49-31 5-48 21-53 49Z" fill="#e6daf7"/>
+<path d="M1004 38c-12-1-21 8-20 20 1 10 10 16 19 12-2 10-7 16-15 23 18-5 31-20 31-36 0-12-5-19-15-19Z" fill="#8153e5" stroke="none"/>
+<path d="M991 53c2-4 5-6 10-6" stroke="#fff" stroke-width="1.2"/>
+<path d="M1115 262c-4-28-1-53 9-74m-4 30c-19-3-32-15-36-30 24 0 34 12 36 30Zm3-17c20-5 33-18 37-34-22 3-35 16-37 34Z"/>
+</g>
+<g fill="#8153e5"><circle cx="211" cy="73" r="2"/><circle cx="437" cy="156" r="2"/><circle cx="666" cy="207" r="2"/><circle cx="905" cy="87" r="2"/><circle cx="1085" cy="127" r="2"/></g>
+</svg>

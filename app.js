@@ -159,18 +159,24 @@ document.querySelectorAll('[data-evidence-viewer]').forEach(viewer=>{const tabs=
   if (motion.matches) return;
   const text = greeting.textContent;
   const letters = Array.from(text);
+  const render = value => {
+    greeting.replaceChildren(document.createTextNode(value.endsWith('.') ? value.slice(0, -1) : value));
+    if (value.endsWith('.')) {
+      const dot = document.createElement('span'); dot.className = 'about-heading-dot'; dot.textContent = '.'; greeting.append(dot);
+    }
+  };
   let index = 0;
   let timer;
   const finish = () => {
     clearTimeout(timer);
-    greeting.textContent = text;
+    render(text);
     greeting.classList.remove('is-typing', 'is-finished');
   };
   motion.addEventListener('change', event => { if (event.matches) finish(); });
-  greeting.textContent = '';
+  render('');
   greeting.classList.add('is-typing');
   const type = () => {
-    greeting.textContent = letters.slice(0, ++index).join('');
+    render(letters.slice(0, ++index).join(''));
     if (index === letters.length) {
       greeting.classList.remove('is-typing');
       greeting.classList.add('is-finished');

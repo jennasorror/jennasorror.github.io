@@ -1,9 +1,7 @@
-const announce=document.querySelector('[data-ds-status]');
-function message(text){if(announce)announce.textContent=text;}
 const typeText=document.querySelector('#type-text'),typeFamily=document.querySelector('#type-family'),typeSize=document.querySelector('#type-size'),typeLeading=document.querySelector('#type-leading'),typeSample=document.querySelector('[data-type-sample]');
 function typography(){if(!typeSample)return;typeSample.textContent=typeText.value||'Clarity is an act of care.';typeSample.style.fontFamily=typeFamily.value==='display'?'var(--font-display)':'var(--font-body)';typeSample.style.fontWeight=typeFamily.value==='display'?'700':'400';typeSample.style.fontSize=typeSize.value+'px';typeSample.style.lineHeight=typeLeading.value;document.querySelector('[data-type-size]').textContent=typeSize.value+' px';document.querySelector('[data-type-leading]').textContent=typeLeading.value;document.querySelector('[data-type-code]').textContent=`font-family: var(--font-${typeFamily.value==='display'?'display':'body'});\nfont-weight: ${typeFamily.value==='display'?'700':'400'};\nfont-size: ${typeSize.value}px;\nline-height: ${typeLeading.value};`;}
 [typeText,typeFamily,typeSize,typeLeading].forEach(e=>e?.addEventListener('input',typography));typography();
-document.querySelector('[data-type-reset]')?.addEventListener('click',()=>{typeText.value='Clarity is an act of care.';typeFamily.value='display';typeSize.value='52';typeLeading.value='1.08';typography();message('Typography preview reset.');});
+document.querySelector('[data-type-reset]')?.addEventListener('click',()=>{typeText.value='Clarity is an act of care.';typeFamily.value='display';typeSize.value='52';typeLeading.value='1.08';typography();});
 
 // Measure diagram anchors after layout and font loading. Connectors stay exact as content reflows.
 function drawConnections(){

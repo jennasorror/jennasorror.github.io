@@ -541,3 +541,5 @@ p.eyebrow{text-transform:uppercase}
 @media(prefers-reduced-motion:reduce){.typed-greeting.is-typing::after,.typed-greeting.is-finished::after{animation:none;opacity:1}}
 
 .about-heading-dot{color:var(--action-primary)}
+
+.chart-status-heading{font:600 var(--type-heading)/1.35 var(--font-display);margin:32px 0 12px;color:var(--text-primary)}
